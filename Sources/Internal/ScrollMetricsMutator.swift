@@ -31,6 +31,8 @@ final class ScrollMetricsMutator {
 
   let scrollAxis: ScrollAxis
 
+  var endInset: CGFloat = 0
+
   func setUpInitialMetricsIfNeeded() {
     guard !hasSetUpInitialScrollMetrics else { return }
 
@@ -66,9 +68,9 @@ final class ScrollMetricsMutator {
 
     if let maximumScrollOffset = maximumScrollOffset {
       let size = scrollMetricsProvider.size(for: scrollAxis)
-      scrollMetricsProvider.setEndInset(to: -(size - maximumScrollOffset), for: scrollAxis)
+      scrollMetricsProvider.setEndInset(to: -(size - maximumScrollOffset) + endInset, for: scrollAxis)
     } else {
-      scrollMetricsProvider.setEndInset(to: 0, for: scrollAxis)
+      scrollMetricsProvider.setEndInset(to: endInset, for: scrollAxis)
     }
 
     // If we don't backup and restore the offset, one-frame glitches / scroll position jumps can
