@@ -107,6 +107,12 @@ public final class CalendarView: UIView {
     visibleItemsDetails?.visibleDayRange
   }
 
+  public var bottomScrollInset: CGFloat = 0 {
+    didSet {
+        scrollMetricsMutator.endInset = bottomScrollInset
+    }
+  }
+
   public override var bounds: CGRect {
     willSet {
       // If the bounds' size changes (on rotation, for example), our existing anchor layout item
