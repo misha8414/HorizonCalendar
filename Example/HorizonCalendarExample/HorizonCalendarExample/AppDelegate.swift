@@ -21,6 +21,7 @@ import UIKit
 final class AppDelegate: UIResponder, UIApplicationDelegate {
 
   // MARK: Internal
+  // MARK: Test
 
   var window: UIWindow?
 
