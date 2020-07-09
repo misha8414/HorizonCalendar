@@ -19,14 +19,6 @@ import Foundation
 
 extension Calendar {
 
-  func month(containing date: Date) -> Month {
-    return Month(
-      era: component(.era, from: date),
-      year: component(.year, from: date),
-      month: component(.month, from: date),
-      isInGregorianCalendar: identifier == .gregorian)
-  }
-
   func firstDate(of month: Month) -> Date {
     let firstDateComponents = DateComponents(era: month.era, year: month.year, month: month.month)
     guard let firstDate = date(from: firstDateComponents) else {
@@ -73,15 +65,6 @@ extension Calendar {
 // MARK: Day Helpers
 
 extension Calendar {
-
-  func day(containing date: Date) -> Day {
-    let month = Month(
-      era: component(.era, from: date),
-      year: component(.year, from: date),
-      month: component(.month, from: date),
-      isInGregorianCalendar: identifier == .gregorian)
-    return Day(month: month, day: component(.day, from: date))
-  }
 
   func startDate(of day: Day) -> Date {
     let dateComponents = DateComponents(
