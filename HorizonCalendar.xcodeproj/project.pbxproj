@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87C6650A24B7728200067F9B /* Calendar+PublicHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C6650924B7728200067F9B /* Calendar+PublicHelpers.swift */; };
 		9396F3CC2483261B008AD306 /* HorizonCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9396F3C22483261B008AD306 /* HorizonCalendar.framework */; };
 		9396F3DD24832715008AD306 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9396F3DC24832715008AD306 /* README.md */; };
 		9396F3DF248327C2008AD306 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9396F3DE248327C2008AD306 /* LICENSE */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87C6650924B7728200067F9B /* Calendar+PublicHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+PublicHelpers.swift"; sourceTree = "<group>"; };
 		9396F3C22483261B008AD306 /* HorizonCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HorizonCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9396F3C62483261B008AD306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9396F3CB2483261B008AD306 /* HorizonCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorizonCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +187,7 @@
 				939E693D24846A6600A8BCC7 /* Month.swift */,
 				939E693F24846A8C00A8BCC7 /* Day.swift */,
 				939E694524847BA300A8BCC7 /* DayOfWeekPosition.swift */,
+				87C6650924B7728200067F9B /* Calendar+PublicHelpers.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				939E692A24837E0300A8BCC7 /* CalendarItemViewReuseManager.swift in Sources */,
+				87C6650A24B7728200067F9B /* Calendar+PublicHelpers.swift in Sources */,
 				939E692524837E0300A8BCC7 /* LayoutItemTypeEnumerator.swift in Sources */,
 				939E692724837E0300A8BCC7 /* VisibleItemsProvider.swift in Sources */,
 				939E693024837E0300A8BCC7 /* FrameProvider.swift in Sources */,
